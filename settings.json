@@ -1,0 +1,180 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+
+  "proxy": "",
+  "vim": {
+    "use_smartcase_find": true
+  },
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "working_directory": "current_project_directory"
+  },
+  "vim_mode": false,
+  "inlay_hints": {
+    "show_value_hints": true,
+    "enabled": true,
+  },
+  "code_lens":"on",
+  "cli_default_open_behavior": "existing_window",
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent_servers": {
+    "OpenCode": {
+      "type": "custom",
+      "command": "opencode",
+      "args": ["acp"],
+    },
+  },
+  "context_servers": {
+    "postgres-context-server": {
+      "enabled": true,
+      "settings": {
+        ,
+      },
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "ctx7sk-ba013096-5354-4a05-bdbd-f6e696d5341e",
+      },
+    },
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+  },
+  "auto_update_extensions": {
+    "opencode": false,
+  },
+  "language_models": {
+    "openai_compatible": {
+      "glm6": {
+        "api_url": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "available_models": [
+          {
+            "name": "glm-5",
+            "max_tokens": 200000,
+            "max_output_tokens": 128000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+            },
+          },
+          {
+            "name": "glm-4.7",
+            "max_tokens": 200000,
+            "max_output_tokens": 128000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+            },
+          },
+        ],
+      },
+      "nvdia": {
+        "api_url": "https://integrate.api.nvidia.com/v1",
+        "available_models": [
+          {
+            "name": "z-ai/glm4.7",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+            },
+          },
+        ],
+      },
+    },
+  },
+  "base_keymap": "JetBrains",
+  "agent": {
+    "dock": "right",
+    "tool_permissions": {
+      "default": "allow",
+    },
+    "default_profile": "ask",
+    "model_parameters": [],
+    "default_model": {
+      "provider": "glm6",
+      "model": "glm-5",
+    },
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "JetBrains New UI Icons (Dark)",
+    "dark": "Material Icon Theme"
+  },
+  "ui_font_family": "JetBrains Maple Mono",
+  "ui_font_size": 16,
+  "buffer_font_family": "JetBrains Maple Mono",
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "dark",
+    "light": "io3 Light",
+    "dark": "io3 Dark",
+  },
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "deps-language-server": true,
+    "dockerfile": true,
+    "emmet": true,
+    "git-firefly": true,
+    "haskell": true,
+    "html": true,
+    "ini": true,
+    "jetbrains-dark-blur-theme": true,
+    "jetbrains-new-ui-icons": true,
+    "just": true,
+    "kanagawa-themes": true,
+    "log": true,
+    "lua": true,
+    "material-icon-theme": true,
+    "mcp-server-context7": true,
+    "neon-comfy-soft-themes": true,
+    "php": true,
+    "postgres-context-server": true,
+    "scss": true,
+    "sql": true,
+    "tokyo-night": true,
+    "toml": true,
+    "vscode-dark-modern": true,
+    "vue": true,
+    "wgsl": true,
+    "zig": true
+  },
+
+}
